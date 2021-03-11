@@ -1,0 +1,76 @@
+\documentclass{article}
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+
+\addtolength{\topmargin}{-1in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\title{\textbf{CS152/154}}
+\author{Shubh Kumar}
+\date{IIT-B,Spring Semester 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Lecture 1: Review of Program Design}
+\begin{itemize}
+    \item \textbf{Conceptualization:} The theorems, proofs, Design, suitability, satisfiability
+    \item When Software began becoming complex, only then people understood the importance of Program Design.
+    \item \textbf{Re-usability:} Making Programs like Black-Box like Components which can be simply put somewhere else, this is done by making the program standardized and having it adhere to specifications. We need to structure our programs so that many of these form a particular structure which can be reused somewhere else, or can be put from somewhere else.
+    \item \textbf{Data and Control Abstractions:} Flow of data and the abstractions which allow us to change the data/state comes under Control Abstractions. The way we store this data could be comes under Data Abstractions.
+    \item Control in real life and thus in programs have many branches through which you want to change the state.
+    \item Boolean, Integers, stuff like this come under Data Abstractions,
+    there are these basic data abstractions, using which we could structure more complex data abstractions.
+    \item \textbf{Programming with Assertions:}Asserting gives us defences against some mistakes we may have unknowingly made in the program. We add assert statements which terminate the program just as soon as the assert conditions goes false
+    \item \textbf{Reasoning about Programs: Proving correctness} How to make sure that what we are doing is correct
+    \item \textbf{Imperative Programming Ideas:} Ideas revolving around the change of states as the basis of Programming
+    \item \textbf{Applicative Programming Ideas:} Ideas around functions operating on arguments as the basis of programming
+    \item \textbf{Procedural Paradigm:} The way its done in C,C++, FORTRAN i.e. We have some procedures and global variables.
+    \item \textbf{Object-Oriented Programming Ideas:} Ideas revolving around packaging into objects
+
+\end{itemize}
+
+\section{Lecture 2 : Monday's Lab Discussion}
+
+\begin{itemize}
+    \item The C program was supposed to be procedural, whereas the C++ program needs to be Object-oriented
+
+    \item A Good Programming Practice is to declare all the variables in the beginning of the main function/file.
+
+    \item Commenting usage/documentation in the beginning is another
+    great programming habit.
+
+    \item \textbf{C++ Resource:} \href{www.cplusplus.com}{Click Here}
+    \item \textbf{Linux Commands:}
+    \begin{itemize}
+        \item man command in Linux: To Find documentation
+         \item mv command in Linux: To Move files from one place to a folder
+         \item For more basic commands \href{https://www.hostinger.in/tutorials/linux-commands}{Go here.}
+    \end{itemize}
+
+     \item srand() sets the seed, which is basically an attribute for a beautiful random number generator, if we have the same seed or set no seed, then it'll give the same seed no matter how many times we run. Thus, We should almost always use srand() and a seed whenever we use rand()
+\end{itemize}
+
+\section{Lecture 3: Critical Discussion on Monday's Lab and Programming Discipline}
+
+\begin{itemize}
+    \item \verb|#include<...>| includes header files, which are links to other pre-defined libraries.
+    \item \verb|using namespace ...| includes a particular set of functions(in namespace, ie the space of all possible names) which identify with a particular library/task named in \ldots
+    \item \textbf{Proper Spacing: } \verb|int main () {}| is better than \verb|int main(){}| , but not too many spaces and also like \verb|cout << "hello\n";| instead of \verb|cout<<"hello\n";|
+    \item \verb|printf(10)| and similar would give error, as the first argument is supposed to be only the format, and only in the placeholders could numbers be added.
+    \item If we try to print something without initialization, it prints garbage values.
+    \item For \verb|printf()| and \verb|scanf()| syntax properly \href{http://www.cplusplus.com/reference/cstdio/}{Click Here}.
+
+\end{itemize}
+
+\end{document}
