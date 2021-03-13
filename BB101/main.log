@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.31)  11 MAR 2021 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.31)  13 MAR 2021 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -239,27 +239,21 @@ Overfull \hbox (19.02643pt too wide) in paragraph at lines 48--49
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: F1C6E7C9D73971C9BBD2A54AF0392D26;231
-(rerunfilecheck)             After:  556166227099345EB8ECA48FE0B5828D;303.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 556166227099345EB8ECA48FE0B5828D;303.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 4950 strings out of 483183
- 76624 string characters out of 5966292
+ 4951 strings out of 483183
+ 76635 string characters out of 5966292
  333344 words of memory out of 5000000
- 19895 multiletter control sequences out of 15000+600000
+ 19896 multiletter control sequences out of 15000+600000
  536928 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,6n,29p,615b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -268,10 +262,10 @@ pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on main.pdf (4 pages, 77581 bytes).
+Output written on main.pdf (4 pages, 79669 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  18 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
