@@ -1,10 +1,11 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 \addtolength{\oddsidemargin}{-.875in}
 \addtolength{\evensidemargin}{-.875in}
 \addtolength{\textwidth}{1.75in}
-
+\usepackage{amsmath}
 \addtolength{\topmargin}{-1in}
 \addtolength{\textheight}{1.75in}
 
@@ -55,4 +56,57 @@
 
 \section{Lecture 2: }
 Nothing Extra as such, apart form Lecture Slides!
+
+\section{Recorded Lecture 2: Flux, Gauss's Divergence Theorem, Stokes', Curvilinear Co-ordinates in a plane}
+\begin{itemize}
+  \item The $\hat{r}$ depends implicity on $\theta$. (Although not explicitly!)
+  \item Similar to the way in which, we used to take the norm of the area vector by taking its deriavtive with the numbers, which
+  define it, we could do something similar with length as well!
+  \item The $\nabla$ operator takes a different form when we consider Curvilinear co-ordinates in a plane,as conventionally its defined as the change of the scalar function w.r.t the changes in the x and y co-ordinates only, such that when we take a line-integral taking the distance appropriately in Curvilinear co-ordinates then we could get the right answer.
+  \item \textbf{Formulae:}
+  \begin{itemize}
+    \item $\begin{pmatrix}
+              \hat{r} \\
+              \hat{\theta}
+          \end{pmatrix} =
+          \begin{pmatrix}
+            \cos (\theta) && \sin (\theta) \\
+            -\sin (\theta) && \cos (\theta)
+          \end{pmatrix}
+          \begin{pmatrix}
+            \hat{x} \\ \hat{y}
+          \end{pmatrix}$
+          \item Clearly $ \hat{r} \cdot \hat{\theta} = 0$
+          \item \scalebox{1.2}{$d\hat{l} = \delta r \hat{r} + r \delta \theta \hat{\theta}$}
+          \item the $ \nabla$ operator in curvilinear co-ordinates is given by: \\ \\
+          \scalebox{1.2}{$ \nabla = \frac{\partial}{\partial r} \hat{r} + \frac{1}{r} \frac{\partial}{\partial \theta} \hat{\theta}$}
+          \item \scalebox{1.2}{$\hat{\textit{v}} = \frac{dr}{dt} \hat{r} + \frac{d \theta}{dt} \hat{\theta}$}
+          \item \scalebox{1.2}{\textit{$\vec{a} = \big(\ddot{r}-\dot{\theta}^{2}r\big) \hat{r} + \big( r\ddot{\theta} + 2\dot{r}\dot{\theta} \big)\hat{\theta}$}}
+  \end{itemize}
+\end{itemize}
+
+\section{Recorded Lecture: 3D Curvilinear Systems}
+\begin{itemize}
+  \item  Exercise: Do the 2D Calculations assuming the centre at a point on the diameter and taking the ranges of $\phi$ and $r$ accordingly.
+  \item \scalebox{1.2}{$\frac{d\hat{\theta}}{dt} = -\dot{\theta}\hat{r}$ \\ $\frac{d\hat{r}}{dt} = \dot{\theta}\hat{\theta}$}
+  \item Challenge 1; Show Kepler's Second Law implies $a_{\theta} = 0$.(Second Law is about areal velocity being constant)
+  \item Challenge 2: Kepler's Law essentially applies that $\vec{F}(\vec{r}) = f(s)\hat{s}$, where s is basically the magnitude of r, the radial distance
+  Using this show that $f(r) = \frac{-k}{r^{2}}$. Using the fact that the Planet is at one of the focii.
+  \item The Volume Element in 3D is : $r^{2}\sin(\theta)drd\theta$
+  \item The Area Elements taking two elements could be calculated easily by writing them in the vector form with differential increments in all the different co-ordinates and then taking cross products, Similarly in Cylindrical Co-ordinates. (Similar is the process to calculate Volume!)
+
+  \item These differential increments in the different quantities could be calculated by simply taking $dx\hat{x} + dy\hat{y} + dx\hat{z}$ and trying to putting all co-ordinates in their new form. (Exercise: Do so for Spherical Co-ordinates)
+
+  \item By taking dot of these differential increments with gradient we should get $\Delta f$, and using that we calculate the Gradient in these co-ordinates. (By Making sure they adhere to Chain Rule!)
+
+
+  \item \textbf{Formulae:}
+
+  \begin{itemize}
+    \item \scalebox{1.2}{ $\sum_{i = 1}^{n}{h_{i}du_{i}\hat{u_i}}$} \\ \\
+    where the parameterization has $n$ co-ordinates $\{u_i\}$ for $i = 1....n$ and $h_i$ are the various coefficient depending on the way we try to re-parameterize from the Cartesian System, building from here only, we have:
+    \item \scalebox{1.2}{$\nabla = \sum_{i = 1}^{n}{\frac{1}{h_i}\frac{\partial}{\partial u_{i}}\hat{u_i}}$}
+  \end{itemize}
+
+\end{itemize}
 \end{document}
