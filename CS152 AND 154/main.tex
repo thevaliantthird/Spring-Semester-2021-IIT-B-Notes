@@ -87,4 +87,28 @@
   \item Abstracting different notions as data types helps in Re-usability.
 \end{itemize}
 
+\section{Lecture 5: Abstract Data Types (Continued!)}
+\begin{itemize}
+  \item Once, you're familiar with the applications in a domain, its always easier to find abstractions with which you could program those applications.
+  \item If you go from domain to domain, the terminologies they use change, and thus so does the abstractions. Eg. Hospitals and Schools have different abstractions that they care about!
+  \item Language gives you, the very basic abstractions in form of various data types: int(s), float(s), function calls etc.
+  \item Learning Data Structures brings a lot of more ideas about implementing these data abstractions in programs.
+  \item Class represents the abstraction of data. Object is an instance of that class.
+  \item \textbf{Functional Representation:} Manipulating these data-abstractions similar to the way we define mathematical equations.
+  \begin{itemize}
+    \item Analyzing various aspects of the Data Abstractions, to get an idea of its properties, and then deducing mathematical relations from them, which could simplify our work!
+    \item The Example of a stack:
+    \begin{itemize}
+    \item For a stack, we could easily write that if the stack is \verb|X|, then if the last manipulation of the stack using \verb|push| or \verb|pop| is \verb|push(X,a)|, then \verb|top(X)| will give \verb|a|.
+    \item Similarly, we also observe that in case, if the last manipulation was \verb|pop|, then what we do is simply go over the latest manipulations and the very time, where we see that the number of usages of the \verb|push| is more than \verb|pop|, than the element which is causing this difference of one would give us the result of \verb|top|.
+    \item If we were to do this abstraction without using the stack data-structure, then computing the result of \verb|top|, could be calculated in $O(\log n)$ time, where $n$ is the number of such commands we've come across so far.
+    \item But, that won't be required if we use the stack data-structure(abstraction)!, and then we would be able to perform \verb|push, pop| or \verb|top| in constant time, demonstrating the usefulness of data abstractions.
+    \item Other Observations would be \verb|empty(new())| will always return true, \verb|removetop(push(X,t))| will give back \verb|X|(i.e. The Stack before \verb|t| was added will be the same as the one we'll get if we remove the top element of the stack after adding the top-element),
+    \verb|not empty(push(X,t))| will be always true as if we push something into the stack than it couldn't possibly be empty.
+    \end{itemize}
+    \item In the last expression, we observe how mathematics could help us better represent the functional aspect of various Data Abstractions.
+  \end{itemize}
+\end{itemize}
+
+
 \end{document}
