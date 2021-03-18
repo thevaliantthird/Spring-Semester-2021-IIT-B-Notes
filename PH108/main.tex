@@ -119,4 +119,47 @@ Nothing Extra as such, apart form Lecture Slides!
   \item
 \end{itemize}
 
+\section{Live Lecture: Discussion on L2,L3 on Curvilinear Co-ordinates}
+\begin{itemize}
+  \item A Formula which I missed from the previous  section: \\
+  $\begin{pmatrix}
+    \dot{\hat{r}} \\
+    \dot{\hat{\theta}}
+  \end{pmatrix}
+ = \dot{\theta}
+ \begin{pmatrix}
+  -\sin \theta && \cos \theta \\
+  -\cos \theta && - \sin \theta
+ \end{pmatrix}
+ \begin{pmatrix}
+   {\hat{x}} \\
+   {\hat{y}}
+ \end{pmatrix}
+ = \dot{\theta}
+ \begin{pmatrix}
+   0 && 1 \\
+   -1 && 0
+ \end{pmatrix}
+ \begin{pmatrix}
+   \hat{r} \\
+   \hat{\theta}
+ \end{pmatrix}
+  $
+
+  \item The Transformation Matrix in the last part is Skew-Symmetric(point to be noted!)
+  \item From one orthonormal basis to another orthonormal basis, Unitary Transformation is involved.
+  \item Let's see what is it so:
+    \begin{itemize}
+      \item First thing, if I have any unit vector, then its orthonormal to its differential
+      \item Now, If I have the transformaion matrix between two orthonormal basis as $mathbf{M}$, then $\mathbf{MM}^{T} = I$ and if we differentiate this matrix, we find:
+      $\mathbf{\dot{M}M^T + M\dot{M}^T = 0}$ which means $\mathbf{MM}^{T}$ is skew-symmetric!
+    \end{itemize}
+  \item \textbf{Levi-Civita Symbol System:} TODO!
+  \begin{itemize}
+    \item If an index is repeated, then summation is automatically implied.
+    Like, the minute I have \textit{j} and \textit{k}, it in itself implies a summation!
+  \end{itemize}
+
+\end{itemize}
+
 \end{document}

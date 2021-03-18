@@ -110,5 +110,25 @@
   \end{itemize}
 \end{itemize}
 
+\section{Lecture 6: Abstract Data Types(Still Continued!)}
+\begin{itemize}
+  \item We want to package our program into different classes and objects, so that they are abstracted and only interact with the outside world through some interfaces, in the same way that electronics and other stuff interact with the world using buttons, Ports.
+  \item These abstractions essentially define a protocol of interacting with these objects.
+  \item Just like any eletronic product has all of its Components, are made in different places and then assembled, so that each of these componenets have their own abstractions, the same stands true for Programming Abstractions.
+  \item When you're the manufacturer, you'd understand everything that happens inside the blackbox of the abstraction, because you'd want to keep it improving, But if you just want it to develop an application of it, you don't care about that. The same paradigms apply to Abstractions in Programming.
+  \item Abstractions usually have a hierarchy, one abstraction used by another which is yet used by another.
+  \item Concepts in Physics, Chemistry, Biology could be all taken to be abstractions, with some commmon abstractions spanning across all subjects.
+  \item The Nouns/Terminology changing gives us the set of abstractions.
+  \item We come up with abstractions so that at the next level, we can forget how these things work, and not care about them!
+  \item Abstractions could thus be taken as a higher level view of stuff.
+  \item \textbf{Designing Tips:}
+  \begin{itemize}
+    \item Keep Program Compilable throughout.
+    \item Don't wait till the end to Compile.
+    \item Define the Functions outside the main class, In the class Declaration keep only the declarations of this function, implement these later.
+    \item We need to have Destructor/Constructor implementations, if we've declared it before hand, as when we create that object the Constructor would definitely be called and when the program ends, the Destructor would definitely be called.
+  \end{itemize}
+
+\end{itemize}
 
 \end{document}
