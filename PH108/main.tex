@@ -9,6 +9,13 @@
 \addtolength{\topmargin}{-1in}
 \addtolength{\textheight}{1.75in}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
 
 \title{PH108}
 \author{Shubh Kumar}
@@ -105,12 +112,14 @@ Nothing Extra as such, apart form Lecture Slides!
   \begin{itemize}
     \item \scalebox{1.2}{ $\sum_{i = 1}^{n}{h_{i}du_{i}\hat{u_i}}$} \\ \\
     where the parameterization has $n$ co-ordinates $\{u_i\}$ for $i = 1....n$ and $h_i$ are the various coefficient depending on the way we try to re-parameterize from the Cartesian System, building from here only, we have:
-    \item \scalebox{1.2}{$\nabla = \sum_{i = 1}^{n}{\frac{1}{h_i}\frac{\partial}{\partial u_{i}}\hat{u_i}}$}
+    \item \scalebox{1.2}{$\nabla = \sum_{i = 1}^{n}{\frac{1}{h_i}\frac{\partial}{\partial u_{i}}\hat{u_i}}$}  \\
+    \\
+    This is only the $\nabla$ operator, the curl and divergence operators have some different features!
   \end{itemize}
 
 \end{itemize}
 
-\section{Tutorial 1:$\nabla$ operator, Curl, Divergence, Stokes's, Gauss's, Planar Curvilinear Co-ordinates}
+\section{Tutorial 1: $\nabla$ operator, Curl, Divergence, Stokes's, Gauss's, Planar Curvilinear Co-ordinates}
 \begin{itemize}
   \item The divergence at a point of stable equilibrium must be -ve.
   \item But, if the equilibrium is stable, than the divergence needs to be negative.
@@ -154,12 +163,62 @@ Nothing Extra as such, apart form Lecture Slides!
       \item Now, If I have the transformaion matrix between two orthonormal basis as $mathbf{M}$, then $\mathbf{MM}^{T} = I$ and if we differentiate this matrix, we find:
       $\mathbf{\dot{M}M^T + M\dot{M}^T = 0}$ which means $\mathbf{MM}^{T}$ is skew-symmetric!
     \end{itemize}
-  \item \textbf{Levi-Civita Symbol System:} TODO!
+  \item \textbf{Levi-Civita Symbol System:}
   \begin{itemize}
     \item If an index is repeated, then summation is automatically implied.
     Like, the minute I have \textit{j} and \textit{k}, it in itself implies a summation!
+    \item For more info head \href{http://www.physics.usu.edu/Wheeler/ClassicalMechanics/CMnotesLeviCivita.pdf}{here}.
   \end{itemize}
 
+\end{itemize}
+
+\section {Recorded Lecture 4: Curl, Divergence in Curvilinear Co-ordinates and Multi-Dimensional Dirac-Delta Function}
+
+\begin{itemize}
+  \item While Applying the Divergence Theorem, or any theorem, If we have a point where the function isn't defined, then that could lead to trouble.
+  \item We define the Dirac-Delta as: \\
+  \begin{center}
+    $  \delta (x-x_0) = \begin{cases}
+                      1 & x = x_0 \\
+                      0 & otherwise \\
+                  \end{cases}$
+  \end{center}
+
+  Also: \\
+  \begin{center}
+    $  \int_{a}^{b}{f(x) \delta (x-x_0) dx} = \begin{cases}
+                      f(x_0) & a < x_0 < b \\
+                      0 & otherwise \\
+                  \end{cases}$
+  \end{center}
+
+  \item Using the Dirac-Delta Function, we define the Divergence,
+  \begin{center}
+    $ \nabla \cdot \big( \frac{\hat{r}}{r^2} \big) = 4 \pi \delta ^{3} (\vec{r}) = 4 \pi \delta (x) \delta (y) \delta (z)$
+  \end{center}
+
+  \item \textbf{Formulae:}
+  \begin{itemize}
+    \item  \scalebox{1.2}{$\nabla \cdot \vec{F} = \frac{1}{h_{1}h_{2}h_{3}} \sum_{i = 1}^{n}{\frac{\partial (h_{1} h_{2}...h_{i-1} h_{i+1}...h_{n} F_i)}{\partial u_i}}$}   \\
+    Got by calculating Flux, taking two sides at a time and then removing the differential
+    \item \scalebox{1.2}{$\nabla \times \vec{F} = \frac{1}{h_2 h_3} \Big[ \frac{\partial h_3 F_3}{\partial u_2} - \frac{\partial h_2 F_2}{\partial u_3} \Big] \hat{u_1} + \frac{1}{h_3 h_1} \Big[ \frac{\partial h_1 F_1}{\partial u_3} - \frac{\partial h_3 F_3}{\partial u_1} \Big] \hat{u_2} + \frac{1}{h_1 h_2} \Big[ \frac{\partial h_2 F_2}{\partial u_1} - \frac{\partial h_1 F_1}{\partial u_2} \Big] \hat{u_3} $} \\
+    This is derived by taking area in three cases, varying two and keeping the thrid co-ordinate fixed in each, like this by using the Stokes Theorem, we can get the value of the Curl in that direction by calculating the Line Integral, in the differential form ,and then generalizing by exploiting that they permutate.
+    \item
+  \end{itemize}
+\end{itemize}
+
+\section{Recorded Lecture 5: Summary/Re-explaination of Dirac-Delta Function and Helmholtz's Theorem}
+
+\begin{itemize}
+  \item $\int_{- \infty}^{\infty}{e^{i(k-k_0)}} = \delta (k-k_0)$
+  \item \textbf{Helmholtz's Theorem:} It comes as a way to get the Force if we are given its Divergence, Curl as well as Boundary Conditions for it.  \\[0.125in]
+  \begin{center}
+    If Suppose, $D(\mathbf{r}) = \nabla \cdot \vec{F}(\mathbf{r})$ and $C(\mathbf{r}) = \nabla \times \vec{F}(\mathbf{r})$, then we define: \\[0.25in]
+        $ U(\mathbf{r}) = \frac{1}{4 \pi} \int_{}^{}{\frac{D(\mathbf{r})}{|\mathbf{r - r'}|}} dV' $ and  \\[0.125in]
+        $ W(\mathbf{r}) = \frac{1}{4 \pi} \int_{}^{}{\frac{C(\mathbf{r})}{|\mathbf{r - r'}|}} dV' $  \\[0.125in]
+        Then we may write: \\~\\
+        $\vec{\mathbf{F}} = -\nabla U(\mathbf{r}) + \nabla \times W(\mathbf{r}) $ 
+  \end{center}
 \end{itemize}
 
 \end{document}
