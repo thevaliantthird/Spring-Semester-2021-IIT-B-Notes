@@ -131,4 +131,20 @@
 
 \end{itemize}
 
+\section{Lecture 7: Abstract Data Types(still continued!)}
+\begin{itemize}
+  \item  Declarations give us Abstractions, and definitions give us implementations.
+  \item  Interface is what is available on the object to operate it.
+  \item This is interface comes from the public functions/variables of the Object's Class.
+  \item Any file with any declarations could be compiled as an object file, by using \verb|g++ -c|.
+  \item The Object file could be used later.
+  \item \textbf{Encapsulation:} Package all variables/functions together as a single unit, either as a \verb|struct| or \verb|class|. Also, these shouldn't be able to easily accessible from outside this unit!
+  \item Some variables are simply not meant to be global, like phone numbers in a mobile etc., so we shouldn't keep them global, but specific to various classes. Even better keep them private to whatever extent you can.
+  \item If we don't Encapsulate, We need to deal with all componenets separately and hence, we'll have to pass these instances to global functions in order to manipulate them!
+  \item Structures could help us solve the above problems to some extent, but its Classes which finally allows us to increase security further as well as preventing repetitive passing of these Encapsulated Structures to functions(which requires time as it includes copying the entire variable!).
+  \item Big Classes and Big Functions are to be prevented. All these functions, variables for each class should be at the top, so that it could be comprehended easily, and the interactions should be described there itself in comments so that whoever is reading could understand it there itself.
+  \item That's why the declarations should be separated from the definitions!
+\end{itemize}
+
+
 \end{document}

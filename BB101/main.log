@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.31)  18 MAR 2021 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.31)  22 MAR 2021 19:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -244,22 +244,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 171.
  [4] [5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 263.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
 
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 263.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 263.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 263.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 26075DED51D36F7296870B13154B0A33;532.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 263.
+(rerunfilecheck)             Checksum: E3D3FC01E14B1C93696C82DA7AA94430;597.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
  ) 
 Here is how much of TeX's memory you used:
- 4964 strings out of 483183
- 76761 string characters out of 5966292
+ 4966 strings out of 483183
+ 76783 string characters out of 5966292
  333344 words of memory out of 5000000
- 19902 multiletter control sequences out of 15000+600000
+ 19903 multiletter control sequences out of 15000+600000
  536928 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,6n,29p,720b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -270,10 +270,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on main.pdf (7 pages, 107756 bytes).
+Output written on main.pdf (7 pages, 109029 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
