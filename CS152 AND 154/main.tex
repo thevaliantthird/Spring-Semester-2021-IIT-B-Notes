@@ -146,5 +146,18 @@
   \item That's why the declarations should be separated from the definitions!
 \end{itemize}
 
+\section{Lecture 8: Abstractions as State Machines}
+
+\begin{itemize}
+  \item When we view Abstractions as State Machines, then manipulations made in the main funciton are like Human guards which have access inside the machine. We should keep at least those things in the main() function.
+  \item  Every incoming member function call to an object/Abstractions which serves as State Machine must satisfy its pre-conditions . Eg.Can't pop from empty stack, can't push to full one!
+  \item These pre-conditions should be checked inside the abstractions(object!).
+  \item Transitions between the states of these state machine of ours could be viewed as Call to various member functions which are interacting with each other.
+  \item Practice: Drawing SMs for various Abstractions.
+  \item In Complex SMs, We don't show actions which aren't allowed. Simply write if it isn't allowed then give error
+  \item In the Telephone Program, We should have each of the individual states as a different member function so that, when that function is running, then it could be the indication of being in that state.
+  \item Thus, We should've had separate member functions for Dialing, Connecting, Conversing etc.
+  \item
+\end{itemize}
 
 \end{document}
