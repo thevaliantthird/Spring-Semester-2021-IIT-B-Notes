@@ -157,7 +157,31 @@
   \item In Complex SMs, We don't show actions which aren't allowed. Simply write if it isn't allowed then give error
   \item In the Telephone Program, We should have each of the individual states as a different member function so that, when that function is running, then it could be the indication of being in that state.
   \item Thus, We should've had separate member functions for Dialing, Connecting, Conversing etc.
-  \item
+\end{itemize}
+
+I didn't make notes for most of the portions in the second half of the First half-sem as I thought it wasn't helping much! \\
+I did realize this course was a vague one and without summarizing the lectures, it becomes pretty clueless for one to figure what to study before exams. Hence:
+
+\section {Lecture on May 3: Assertions}
+
+\begin{itemize}
+  \item When we write the proof on paper, it has various steps, we would want to make sure these steps were indeed correct and we make sure of this by using assertions, which inform us if we were correct w.r.t the proof.
+  \item Debugger is a post-development way to do so, Assertion is a way to do so during Runtime itself. We have certain breakpoints/checkpoints in the code, where we print something to check, if what we intend to do was correct.
+  \item Exceptions are also a way to handle errors in runtime itself.
+  \item \verb|assert|, helps us check if a particular condition is satisfied at a particular step.
+  \item \verb|assert| is like a demonstration of correctness.
+  \item \verb|assert| is more about finding bugs and you may not add it in the end of the program!
+  \item \verb|try| and \verb|catch| enable us to have error handling in run-time, we generally remove assertions after we've fixed all the bugs!
+  \item \verb|#define NDEBUG| , the assertions are turned off, thereby providing us with a way to not have assertions messing the way our program runs.
+\end{itemize}
+
+\section{Lecture on May 5: Aseertions for Program Correctness}
+
+\begin{itemize}
+  \item We use Assertions for Program Correctness and then remove it after we're done, its like After building a building we are removing the structures which were put up initially to make sure the building's structure was intact.
+  \item The Program Correctness part is only upto O(n) for any method.
+  \item Functions which check the correctness will be used inside the assert function itself.
+  \item Also, a custom-made macro is called in the same scope from which its called, any method/variable in the scope of the place from where the macro is called, can be used inside the functions part of the assertion's condition or the Macro itself.
 \end{itemize}
 
 \end{document}
